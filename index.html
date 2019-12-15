@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+			integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+			crossorigin=""
+		/>
+		<script
+			src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+			integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+			crossorigin=""
+		></script>
+		<title>InfoMAP Rivera</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Info<span>MAP</span> Rivera</h1>
+			<div id="mapid"></div>
+			<p>
+				Esta página web utiliza los
+				<a href="https://www.rivera.gub.uy/portal/datos-abiertos/"
+					>Datos Abiertos</a
+				>
+				proporcionados por la Intendencia Departamental de Rivera
+			</p>
+			<div class="botones">
+				<button class="btn-primario" id="barrios">Ver Barrios</button>
+				<button class="btn-primario" id="recoleccion">Ver Recoleccion</button>
+			</div>
+		</div>
+		<script src="recolect.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
